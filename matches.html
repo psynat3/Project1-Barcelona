@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Culers Corner | Matches</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header role="banner" class="site-header">
+  <h1 class="brand">Culers Corner</h1>
+  <p class="tagline">A fan page for everything FC Barcelona.</p>
+  <nav role="navigation">
+    <ul>
+      <li><a href="index.html" title="Home">Home</a></li>
+      <li><a href="squad.html" title="Meet the squad">Squad</a></li>
+      <li><a href="matches.html" title="Fixtures and results" aria-current="page">Matches</a></li>
+      <li><a href="history.html" title="Club history and trophies">History</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main role="main">
+
+  <section aria-labelledby="fixtures-title">
+    <h2 id="fixtures-title">Upcoming fixtures</h2>
+    <table>
+      <caption>Next four matches on the calendar</caption>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Opponent</th>
+        <th scope="col">Competition</th>
+        <th scope="col">Venue</th>
+      </tr>
+      <tr>
+        <td>Oct 4</td>
+        <td>Sevilla</td>
+        <td>La Liga</td>
+        <td>Home</td>
+      </tr>
+      <tr>
+        <td>Oct 8</td>
+        <td>PSG</td>
+        <td>Champions League</td>
+        <td>Away</td>
+      </tr>
+      <tr>
+        <td>Oct 19</td>
+        <td>Girona</td>
+        <td>La Liga</td>
+        <td>Home</td>
+      </tr>
+      <tr>
+        <td>Oct 22</td>
+        <td>Bayern Munich</td>
+        <td>Champions League</td>
+        <td>Home</td>
+      </tr>
+    </table>
+  </section>
+
+  <section aria-labelledby="results-title">
+    <h2 id="results-title">Recent results</h2>
+    <ul>
+      <li>Barca 3 &ndash; 1 Real Betis</li>
+      <li>Barca 2 &ndash; 2 Atletico Madrid</li>
+      <li>Barca 4 &ndash; 0 Valencia</li>
+    </ul>
+
+    <!--
+      MDN Exploration #5: the <q> element.
+      Location: post-match quote below.
+      What it is: <q> marks a short, inline quotation and browsers
+      automatically wrap it in quotation marks for you. It's the
+      inline counterpart to <blockquote>, which is for longer,
+      block-level quotes.
+      How I'm using it: pulling a short line from a post-match
+      interview without having to type the quote marks myself.
+    -->
+    <div class="match-quote">
+      <p><q cite="https://example.com/interview">We controlled the game from the first minute and never let them settle.</q></p>
+      <footer>&mdash; team captain, after the Valencia match</footer>
+    </div>
+  </section>
+
+</main>
+
+<footer role="contentinfo" class="site-footer">
+  <p>Culers Corner is an unofficial, student-built fan project. Not affiliated with FC Barcelona.</p>
+</footer>
+
+</body>
+</html>

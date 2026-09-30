@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Culers Corner | Home</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header role="banner" class="site-header">
+  <h1 class="brand">Culers Corner</h1>
+  <p class="tagline">A fan page for everything FC Barcelona.</p>
+  <nav role="navigation">
+    <ul>
+      <li><a href="index.html" title="Home" aria-current="page">Home</a></li>
+      <li><a href="squad.html" title="Meet the squad">Squad</a></li>
+      <li><a href="matches.html" title="Fixtures and results">Matches</a></li>
+      <li><a href="history.html" title="Club history and trophies">History</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main role="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <h2 id="hero-title">Welcome</h2>
+    <p class="lead">Culers Corner is my personal fan site tracking the squad, the fixtures, and the club's history. Built for CIT 384, styled by hand, no frameworks involved.</p>
+
+    <!--
+      MDN Exploration #1: the <video> element's "poster" attribute.
+      Location: hero clip below.
+      What it is: "poster" points to an image the browser shows before
+      the video has been played or while it's loading, instead of a
+      blank black box.
+      How I'm using it: showing a placeholder graphic until a real
+      highlight clip is added to images/hero-poster.jpg and a real
+      video file is dropped in at video/highlights.mp4.
+
+      MDN Exploration #2: the "loop" attribute, also on this <video>.
+      What it is: a boolean attribute that makes the video start over
+      automatically once it reaches the end, instead of stopping on
+      the last frame.
+      How I'm using it: so a short highlight clip can play on repeat
+      once someone hits play, without needing extra script.
+    -->
+    <video controls poster="images/Barca.jpg" loop width="720" height="720">
+      <source src="Video/BarcaFamily.mp4" type="video/mp4">
+      Your browser doesn't support embedded video. The poster image above shows what would play here.
+    </video>
+    <p class="hero-caption">A short highlights clip from this season.</p>
+  </section>
+
+  <section aria-labelledby="about-title">
+    <h2 id="about-title">Why this club</h2>
+    <p>Barca's academy, La Masia, has produced generation after generation of players raised on the same style: quick passing, tight spacing, and patience on the ball. Following the club means following that idea as much as any one season's results.</p>
+  </section>
+
+  <section aria-labelledby="quick-title">
+    <h2 id="quick-title">Around the site</h2>
+    <ul>
+      <li><a href="squad.html" title="Meet the squad">Squad</a>: current players, numbers, and positions.</li>
+      <li><a href="matches.html" title="Fixtures and results">Matches</a>: upcoming fixtures and recent results.</li>
+      <li><a href="history.html" title="Club history and trophies">History</a>: a short timeline and the trophy case.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer role="contentinfo" class="site-footer">
+  <p>Culers Corner is an unofficial, student-built fan project. Not affiliated with FC Barcelona.</p>
+</footer>
+
+</body>
+</html>

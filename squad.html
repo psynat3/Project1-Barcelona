@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Culers Corner | Squad</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header role="banner" class="site-header">
+  <h1 class="brand">Culers Corner</h1>
+  <p class="tagline">A fan page for everything FC Barcelona.</p>
+  <nav role="navigation">
+    <ul>
+      <li><a href="index.html" title="Home">Home</a></li>
+      <li><a href="squad.html" title="Meet the squad" aria-current="page">Squad</a></li>
+      <li><a href="matches.html" title="Fixtures and results">Matches</a></li>
+      <li><a href="history.html" title="Club history and trophies">History</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main role="main">
+
+  <section aria-labelledby="squad-title">
+    <h2 id="squad-title">First-team squad</h2>
+    <p class="lead">A short list of players I'm following this season. Type a name below to see the browser suggest a match from the squad.</p>
+
+    <!--
+  MDN Exploration #3: the <datalist> element, paired with the
+  "list" attribute on the <input> right below.
+  Location: player search box.
+  What they are: <datalist> holds a set of predefined <option>
+  values, and an <input>'s "list" attribute points at a
+  <datalist>'s id to connect the two. The browser then shows the
+  datalist's options as autocomplete suggestions while typing,
+  without needing any extra script.
+  How I'm using them: letting a visitor start typing a starting XI
+  player's name and see it suggested, the same way a search bar
+  autocompletes.
+-->
+<div class="player-search">
+  <label for="player-search">Find a player:</label>
+  <input type="text" id="player-search" name="player-search" list="player-names" placeholder="Start typing a name...">
+  <datalist id="player-names">
+    <option value="Joan Garcia"></option>
+    <option value="Jules Kounde"></option>
+    <option value="Pau Cubarsi"></option>
+    <option value="Ronald Araujo"></option>
+    <option value="Alejandro Balde"></option>
+    <option value="Pedri"></option>
+    <option value="Frenkie de Jong"></option>
+    <option value="Gavi"></option>
+    <option value="Raphinha"></option>
+    <option value="Robert Lewandowski"></option>
+    <option value="Lamine Yamal"></option>
+  </datalist>
+</div>
+
+<div class="squad-grid">
+
+  <article class="player-card">
+    <div class="player-avatar" style="background:#004d98">JG</div>
+    <h3>Joan Garcia</h3>
+    <p class="position">Goalkeeper</p>
+    <p class="number">#13</p>
+  </article>
+
+  <article class="player-card">
+    <div class="player-avatar" style="background:#a50044">JK</div>
+    <h3>Jules Kounde</h3>
+    <p class="position">Defender</p>
+    <p class="number">#23</p>
+  </article>
+
+  <article class="player-card">
+    <div class="player-avatar" style="background:#edbb00;color:#1c1b19">PC</div>
+    <h3>Pau Cubarsi</h3>
+    <p class="position">Defender</p>
+    <p class="number">#5</p>
+  </article>
+
+  <article class="player-card">
+    <div class="player-avatar" style="background:#004d98">RA</div>
+    <h3>Ronald Araujo</h3>
+    <p class="position">Defender</p>
+    <p class="number">#4</p>
+  </article>
+
+  <article class="player-card">
+    <div class="player-avatar" style="background:#a50044">AB</div>
+    <h3>Alejandro Balde</h3>
+    <p class="position">Defender</p>
+    <p class="number">#3</p>
+  </article>
+
+  <article class="player-card">
+    <div class="player-avatar" style="background:#edbb00;color:#1c1b19">P</div>
+    <h3>Pedri</h3>
+    <p class="position">Midfielder</p>
+    <p class="number">#8</p>
+  </article>
+
+  <article class="player-card">
+    <div class="player-avatar" style="background:#004d98">FD</div>
+    <h3>Frenkie de Jong</h3>
+    <p class="position">Midfielder</p>
+    <p class="number">#21</p>
+  </article>
+
+  <article class="player-card">
+    <div class="player-avatar" style="background:#a50044">G</div>
+    <h3>Gavi</h3>
+    <p class="position">Midfielder</p>
+    <p class="number">#6</p>
+  </article>
+
+  <article class="player-card">
+    <div class="player-avatar" style="background:#edbb00;color:#1c1b19">R</div>
+    <h3>Raphinha</h3>
+    <p class="position">Forward</p>
+    <p class="number">#11</p>
+  </article>
+
+  <article class="player-card">
+    <div class="player-avatar" style="background:#004d98">RL</div>
+    <h3>Robert Lewandowski</h3>
+    <p class="position">Forward</p>
+    <p class="number">#9</p>
+  </article>
+
+  <article class="player-card">
+    <div class="player-avatar" style="background:#a50044">LY</div>
+    <h3>Lamine Yamal</h3>
+    <p class="position">Forward</p>
+    <p class="number">#10</p>
+
+    <!--
+      MDN Exploration #4: the <s> element.
+      Location: right here, on the previous squad number below.
+      What it is: <s> marks text that is no longer accurate or no
+      longer relevant, shown with a strikethrough. It's different
+      from <del>, which is meant for tracking an edit, <s> is for
+      content that's simply outdated.
+      How I'm using it: showing that this player wore squad number
+      19 last season before switching to 10 this year. Squad members are subject to change.
+    -->
+    <p class="retired-note">Wore <s>#19</s> last season, now #10.</p>
+  </article>
+
+</div>
+  </section>
+
+</main>
+
+<footer role="contentinfo" class="site-footer">
+  <p>Culers Corner is an unofficial, student-built fan project. Not affiliated with FC Barcelona.</p>
+</footer>
+
+</body>
+</html>
